@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset ('css/app.css')}}"></link>
+    <link rel="stylesheet" href="{{ asset ('splide/dist/css/splide.min.css')}}"></link>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <!-- Link Swiper's CSS
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    /> -->
     <title>@yield('title')</title>
 </head>
 <body>
@@ -51,26 +47,26 @@
         @yield('content')
     </div>
 </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<!-- Slider JS -->
+<script src="{{ asset ('splide/dist/js/splide.min.js')}}"></script>
 <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+    // slide script
+    if($('.splide').length !== 0) {
+        var sliderFunction = new Splide('.splide' ,{
+            perPage: 3,
+            padding: '16%',
+            pagination: false,
+            arrows: false
+        } );
+
+        sliderFunction.mount();
+    } else {  }
       
-    // aktif menu kanan
+    // aktif menu
     function addActiveClass(element) {
         var current2 = window.location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
-        if (current2 === "") {
-            // $(".nav-item").removeClass("active");
-        }
+        if (current2 === "") {  }
         else {
             if (element.attr('href').indexOf(current2) !== -1) {
                 $(".nav-item").removeClass("active");

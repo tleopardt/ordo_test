@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+h5 {
+  font-size: 0.9vw;
+}
+
 body {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -23,11 +27,11 @@ body {
 }
 
 .menu {
-  width: 220px;
-  border-radius: 10px;
+  width: 17%;
+  border-radius: 1.8vmin;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-  padding: 22px 15px 5px 15px;
+  padding: 1.7% 1.2% 0.1% 1.2%;
 }
 
 .menu .menu-list ul li {
@@ -43,7 +47,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4% 6%;
+  padding: 5% 6%;
   color: #9c9a9a;
   margin: 10% 0%;
   cursor: pointer;
@@ -60,16 +64,17 @@ body {
 
 .menu .menu-list ul li a span {
   padding: 0% 10% 0% 5%;
+  font-size: 1.2vw;
 }
 
 .menu .menu-list ul li a p {
-  font-size: 13px !important;
+  font-size: 0.9vw;
 }
 
 .menu .menu-list ul li:hover,
 .menu .menu-list ul li.active a {
   background-color: #4e7ba8;
-  border-radius: 5px;
+  border-radius: .8vmin;
   color: #fff;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -97,17 +102,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  line-height: 19.5px;
   border-bottom: 1px solid #f3ebeb;
   padding-bottom: 5%;
 }
 
 .welcome img {
   margin-right: 5%;
+  width: 20%;
 }
 
 .welcome p {
-  font-size: 13px;
+  font-size: .9vw;
   font-weight: 500;
 }
 
@@ -118,7 +123,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 18px;
   padding: 20px 15px 5px 15px;
 }
 
@@ -130,7 +134,7 @@ body {
 }
 
 .user p {
-  font-size: 11px;
+  font-size: 0.8vw;
   color: #b0b5bd;
 }
 
@@ -139,8 +143,8 @@ body {
 }
 
 .user img {
+  min-width: 38.44px;
   width: 38.44px;
-  height: 35.6px;
   -webkit-clip-path: circle();
           clip-path: circle();
   background: #b6e3ff;
@@ -154,7 +158,7 @@ body {
   width: 8px;
   height: 8px;
   position: relative;
-  margin-top: -15px;
+  margin-top: -20px;
   margin-left: 28px;
   border-radius: 50%;
   background-color: #c2ce35;
@@ -163,11 +167,15 @@ body {
 
 .main {
   padding-left: 4%;
-  width: 100%;
+  width: 80%;
 }
 
 .title {
   padding: 2% 0%;
+}
+
+.title h3 {
+  font-size: 1.35vw;
 }
 
 .section-1 {
@@ -177,6 +185,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .section-1 .user {
@@ -193,8 +202,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
-  height: 230px;
+  width: 30%;
+  padding: 5% 0%;
   background-color: #fff;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 10px #e2e1e1;
@@ -211,6 +220,11 @@ body {
   padding: 15px;
 }
 
+.section-1 .user .avatar div {
+  margin-top: -35px;
+  border: 4px solid #fff;
+}
+
 .section-1 .user .circle {
   width: 19px;
   height: 19px;
@@ -224,75 +238,67 @@ body {
 }
 
 .section-1 .user .nm h5 {
-  font-size: 12px;
   font-weight: 600;
 }
 
 .section-1 .user .nm p {
-  font-weight: bold;
   color: #79b6fc;
 }
 
-.section-1 .user .nm p span {
-  font-weight: normal;
+.pengumuman {
+  margin-left: 1.5%;
+  width: 69%;
+  overflow: hidden;
 }
 
-.pengumuman {
-  margin-left: 2%;
-  width: 65%;
-  overflow: hidden;
+.pengumuman .splide__track {
+  padding-left: 1% !important;
 }
 
 .pengumuman .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
 }
 
 .pengumuman .card {
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.075);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.075);
-  padding: 10px;
-  width: 162px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+  padding: 1.8%;
+  width: 24%;
   color: #4e7ba8;
-  margin-right: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  scroll-snap-align: start;
+  margin-right: 1.8%;
 }
 
 .pengumuman .card h5 {
-  font-size: 9px;
+  font-size: .65vw;
 }
 
 .pengumuman .card p {
-  font-size: 6px;
+  font-size: .45vw;
 }
 
 .pengumuman .card p:nth-child(4) {
   color: #b0b5bd !important;
-  line-height: 7px;
-  margin-top: 3px;
+  line-height: 140%;
+  margin-top: 2.5px;
 }
 
 .pengumuman .card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1.5vmin;
+  padding: 3% 0%;
 }
 
 .pengumuman .card button {
   background-color: #4e7ba8;
-  font-size: 5.44px;
+  font-size: .40vw;
   color: #fff;
-  border-radius: 2px;
-  padding: 1px 5px;
+  border-radius: .3vmin;
+  padding: 1% 3%;
   border: none;
   font-weight: 525;
+  margin-top: 7%;
 }
 
 .jadwal {
@@ -349,10 +355,10 @@ body {
   text-align: center;
   color: #fff;
   width: 100%;
-  padding: 10px 0px;
-  font-size: 11px;
+  padding: 7% 0%;
+  font-size: 0.8vw;
   font-weight: 700;
-  border-radius: 7px;
+  border-radius: 1vmin;
   margin-bottom: 7%;
 }
 
@@ -360,15 +366,15 @@ body {
 .jadwal .tipe-1 .deskripsi,
 .jadwal .tipe-2 .deskripsi,
 .jadwal .tipe-2 .deskripsi {
-  padding: 10px;
-  border-radius: 7px;
+  padding: 6.5%;
+  border-radius: 1vmin;
 }
 
 .jadwal .tipe-1 .deskripsi h3,
 .jadwal .tipe-1 .deskripsi h3,
 .jadwal .tipe-2 .deskripsi h3,
 .jadwal .tipe-2 .deskripsi h3 {
-  font-size: 11px;
+  font-size: 0.8vw;
   font-weight: 600;
 }
 
@@ -376,7 +382,7 @@ body {
 .jadwal .tipe-1 .deskripsi p,
 .jadwal .tipe-2 .deskripsi p,
 .jadwal .tipe-2 .deskripsi p {
-  font-size: 10px;
+  font-size: 0.75vw;
 }
 
 .jadwal .tipe-2 .deskripsi {
@@ -396,19 +402,19 @@ body {
 }
 
 .jadwal .tipe-2 .deskripsi label {
-  font-size: 7px;
+  font-size: .51vw;
   background-color: #f25151;
-  border-radius: 3px;
-  padding: 2px 6px;
+  border-radius: .4vmin;
+  padding: 1.5% 4.2%;
   color: #fff;
   font-weight: 500;
 }
 
-.jadwal .tipe-2 div:nth-child(odd) .deskripsi label {
+.jadwal .tipe-2 div .label-danger {
   background-color: #f25151;
 }
 
-.jadwal .tipe-2 div:nth-child(odd) .deskripsi label {
+.jadwal .tipe-2 div .label-success {
   background-color: #c2ce35;
 }
 
@@ -433,12 +439,13 @@ body {
           flex-direction: row;
   background-color: #4e7ba8;
   padding: 2% 1%;
-  border-radius: 20px;
+  border-radius: 3vmin;
   border-bottom-left-radius: 0px;
   color: #fff;
 }
 
 .profile .banner .notes {
+  width: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,19 +461,15 @@ body {
           flex-direction: row;
 }
 
-.profile .banner .notes .gif {
-  width: 120px;
-}
-
 .profile .banner .notes .gif img {
-  width: 70px;
+  width: 5%;
   position: absolute;
   margin-top: -1.69%;
   margin-left: -0.75%;
 }
 
 .profile .banner .notes .desc p {
-  font-size: 11px;
+  font-size: 0.8vw;
 }
 
 .profile .banner .btn-info {
@@ -484,14 +487,13 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #71c3d6;
-  padding: 8px 15px;
-  border-radius: 12px;
-  font-size: 11px;
-  margin-top: 1px;
+  padding: 1% 1.5%;
+  border-radius: 1.5vmin;
+  font-size: 0.8vw;
 }
 
 .profile .banner .btn-info span {
-  font-size: 18px;
+  font-size: 1.2vw;
 }
 
 .profile .user {
@@ -526,6 +528,11 @@ body {
   padding: 3% 0% 1.5% 0%;
 }
 
+.profile .user .avatar div {
+  margin-top: -35px;
+  border: 4px solid #fff;
+}
+
 .profile .user .circle {
   width: 19px;
   height: 19px;
@@ -540,7 +547,6 @@ body {
 }
 
 .profile .user .nm h5 {
-  font-size: 12px;
   font-weight: 600;
 }
 

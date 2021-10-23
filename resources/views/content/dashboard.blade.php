@@ -1,6 +1,5 @@
 @extends('templates.layout')
 @section('title', 'Dashboard')
-
 @section('content')
 <div class="main">
     <div class="title">
@@ -14,14 +13,14 @@
             </div>
             <div class="nm">
                 <h5>John Doe</h5>
-                <p>Kelas 7-A <span>| No. Absen 17</span></p>
+                <p><b>Kelas 7-A</b> | No. Absen 17</p>
             </div>
         </div>
         <div class="pengumuman">
             <div class="title">
                 <h5>Daftar Pengumuman</h5>
             </div>
-            <div class="slider">
+            <!-- <div class="slider">
                 <div class="card">
                     <img src="{{ asset ('img/news.png') }}" alt="true" />
                     <h5>Judul Pengumuman</h5>
@@ -49,8 +48,51 @@
                     <p>Senin, 20 Januari 2021</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
                     <button>READ MORE</button>
+                </div>
+            </div> -->
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list slider">
+                        <li class="splide__slide card">
+                            <img src="{{ asset ('img/news.png') }}" alt="true" />
+                            <h5>Judul Pengumuman</h5>
+                            <p>Senin, 20 Januari 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
+                            <button>READ MORE</button>
+                        </li>
+                        <li class="splide__slide card">
+                            <img src="{{ asset ('img/news.png') }}" alt="true" />
+                            <h5>Judul Pengumuman</h5>
+                            <p>Senin, 20 Januari 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
+                            <button>READ MORE</button>
+                        </li>
+                        <li class="splide__slide card">
+                            <img src="{{ asset ('img/news.png') }}" alt="true" />
+                            <h5>Judul Pengumuman</h5>
+                            <p>Senin, 20 Januari 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
+                            <button>READ MORE</button>
+                        </li>
+                        <li class="splide__slide card">
+                            <img src="{{ asset ('img/news.png') }}" alt="true" />
+                            <h5>Judul Pengumuman</h5>
+                            <p>Senin, 20 Januari 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
+                            <button>READ MORE</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <!-- <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div> -->
         </div>
     </div>
     <div class="jadwal">
@@ -119,7 +161,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Remidi</label>
+                    <label class="label-danger">Remidi</label>
                 </div>
             </div>
             <div>
@@ -130,7 +172,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Ulangan</label>
+                    <label class="label-success">Ulangan</label>
                 </div>
             </div>
             <div>
@@ -141,7 +183,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Ulangan</label>
+                    <label class="label-success">Ulangan</label>
                 </div>
             </div>
             <div>
@@ -152,7 +194,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Ulangan</label>
+                    <label class="label-success">Ulangan</label>
                 </div>
             </div>
             <div>
@@ -163,7 +205,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Ulangan</label>
+                    <label class="label-success">Ulangan</label>
                 </div>
             </div>
             <div>
@@ -174,7 +216,7 @@
                         <p>Jonathan Laura</p>
                         <p>08:00 - 10:00</p>
                     </div>
-                    <label>Ulangan</label>
+                    <label class="label-success">Ulangan</label>
                 </div>
             </div>
         </div>
