@@ -334,13 +334,7 @@ h5 {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-}
-
-.jadwal .tipe-1 div,
-.jadwal .tipe-1 div,
-.jadwal .tipe-2 div,
-.jadwal .tipe-2 div {
-  padding-right: 7%;
+  grid-gap: 1%;
 }
 
 .jadwal .tipe-1 div:nth-child(odd) .label,

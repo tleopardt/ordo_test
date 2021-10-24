@@ -255,10 +255,11 @@ h5 {
   & .tipe-2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1%;
 
     & div,
     & div {
-      padding-right: 7%;
+      // padding-right: 7%;
 
       &:nth-child(odd) .label {
         background-color: $primary;
