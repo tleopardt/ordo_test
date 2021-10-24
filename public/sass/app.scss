@@ -16,10 +16,6 @@ $icon-size : 1.2vw;
 $mini-text: .8vw;
 $text-color: #fff;
 
-h5 {
-  font-size: $text;
-}
-
 @mixin basicFlex($jc, $fd) {
   display: flex;
   justify-content: $jc;
@@ -31,6 +27,22 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+h5 {
+  font-size: $text;
+}
+.main, .profile {
+  -webkit-animation: fadein 1s; 
+          animation: fadein 1s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .container {
   padding: 2%;
   display: flex;
@@ -102,7 +114,8 @@ body {
 .user {
   display: flex;
   align-items: center;
-  padding: 20px 15px 5px 15px;
+  justify-content: center;
+  padding-top: 10%;
 
   & .nm {
     flex-direction: column;
@@ -114,24 +127,25 @@ body {
   & h5 {
     color: #5271b8;
   }
-  & img {
-    min-width: 38.44px;
-    width: 38.44px;
-    clip-path: circle();
-    background: #b6e3ff;
-  }
   & .avatar {
+    width: 20%;
+    height: 10%;
     margin-right: 5%;
 
-    & div {
-      width: 8px;
-      height: 8px;
-      position: relative;
-      margin-top: -20px;
-      margin-left: 28px;
+    & img {
+      width: 100%;
+      clip-path: circle();
+      background: #b6e3ff;
+    }
+    & .circle {
+      width: 1.2vh;
+      height: 1.15vh;
+      position: absolute;
+      margin-top: -1.4%;
+      margin-left: 2.25%;
       border-radius: 50%;
       background-color: #c2ce35;
-      border: 2px solid #fff;
+      border: 0.3vh solid #fff;
     }
   }
 }
@@ -153,29 +167,27 @@ body {
   & .user {
     @include basicFlex(center, column);
     width: 30%;
-    padding: 5% 0%;
+    padding: 4% 0%;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 3vmin;
     box-shadow: 0 0 10px rgb(226, 225, 225);
 
-    & img {
-      width: 90px;
-      height: 90px;
-    }
     & .avatar {
+      width: 35%;
+      height: 10%;
       margin-right: 0%;
-      padding: 15px;
-      & div {
-        margin-top: -35px;
-        border: 4px solid #fff;
+      padding: 3%;
+
+      & img {
+        width: 100%;
       }
-    }
-    & .circle {
-      width: 19px;
-      height: 19px;
-      border-width: 3px;
-      margin-left: 65px;
-      margin-top: -30px;
+      & .circle {
+        width: 2.6vh;
+        height: 2.5vh;
+        margin-left: 5.6%;
+        margin-top: -2.3%;
+        border-width: 0.6vh !important;
+      }
     }
     & .nm {
       text-align: center;
@@ -359,24 +371,21 @@ body {
     padding: 0% 2%;
     margin: 3% 0%;
 
-    & img {
-      width: 90px;
-      height: 90px;
-    }
     & .avatar {
-      margin-right: 0%;
+      margin-right: 1%;
       padding: 3% 0% 1.5% 0%;
-      & div {
-        margin-top: -35px;
-        border: 4px solid #fff;
+      width: 10%;
+
+      & img {
+        width: 100%;
       }
-    }
-    & .circle {
-      width: 19px;
-      height: 19px;
-      border-width: 3px;
-      margin-left: 65px;
-      margin-top: -30px;
+      & .circle {
+        width: 2.5vh;
+        height: 2.5vh;
+        border-width: 0.6vh;
+        margin-left: 5.1%;
+        margin-top: -2.4%;
+      }
     }
     & .nm {
       text-align: center;
