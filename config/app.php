@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://ordoo-test.herokuapp.com/'),
+    // 'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('DB_HOST'),
 
     'asset_url' => env('ASSET_URL', null),
 
