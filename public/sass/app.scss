@@ -12,7 +12,7 @@ $danger: #f25151;
 $success: #c2ce35;
 
 $text: .9vw;
-$icon-size : 1.2vw;
+$icon-size : 1.5vw;
 $mini-text: .8vw;
 $text-color: #fff;
 
@@ -374,7 +374,7 @@ h5 {
 
     & .avatar {
       margin-right: 1%;
-      padding: 3% 0% 1.5% 0%;
+      padding: 3% 0% 1% 0%;
       width: 10%;
 
       & img {
@@ -403,7 +403,7 @@ h5 {
       background: #FFFAFA;
       width: 100%;
       padding: 1% 2%;
-      border-radius: 25px;
+      border-radius: 2vmin;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
 

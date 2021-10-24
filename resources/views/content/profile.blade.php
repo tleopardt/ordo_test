@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="btn-info">
-      <span class="fab fa-whatsapp"></span>&nbsp;&nbsp;
+      <span class="material-icons">whatsapp</span>&nbsp;&nbsp;
       Hubungi Admin
     </div>
   </div>

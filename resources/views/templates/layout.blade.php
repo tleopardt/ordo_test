@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset ('css/app.css')}}"></link>
     <link rel="stylesheet" href="{{ asset ('splide/dist/css/splide.min.css')}}"></link>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <title>@yield('title')</title>
 </head>
 <body>
@@ -31,16 +32,16 @@
             </div>
             <div class="menu-list">
                 <ul>
-                    <li class="nav-item active"><a href="/"><span class="fas fa-home"></span><p>Dashboard</p></a></li>
-                    <li class="nav-item"><a href="profile"><span class="fas fa-user-circle"></span><p>Profil</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="fas fa-calendar-alt"></span><p>Jadwal</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="fas fa-megaphone"></span><p>Pengumuman</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="fas fa-graduation-cap"></span><p>Kelas</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="fas fa-clipboard"></span><p>Quiz</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="fas fa-copy"></span><p>Ulangan</p></a></li>
+                    <li class="nav-item active"><a href="/"><span class="material-icons">home</span><p>Dashboard</p></a></li>
+                    <li class="nav-item"><a href="profile"><span class="material-icons">account_circle</span><p>Profil</p></a></li>
+                    <li class="nav-item"><a href="#"><span class="material-icons">event_note</span><p>Jadwal</p></a></li>
+                    <li class="nav-item"><a href="#"><span class="material-icons">cast_for_education</span><p>Pengumuman</p></a></li>
+                    <li class="nav-item"><a href="#"><span class="material-icons">school</span><p>Kelas</p></a></li>
+                    <li class="nav-item"><a href="#"><span class="material-icons">assignment</span><p>Quiz</p></a></li>
+                    <li class="nav-item"><a href="#"><span class="material-icons">file_copy</span><p>Ulangan</p></a></li>
 
                     <div></div>
-                    <li><a href="#"><span class="fas fa-sign-out"></span><p>Logout</p></a></li>
+                    <li><a href="#"><span class="material-icons">logout</span><p>Logout</p></a></li>
                 </ul>
             </div>
         </div>

@@ -87,7 +87,7 @@ h5 {
 
 .menu .menu-list ul li a span {
   padding: 0% 10% 0% 5%;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 .menu .menu-list ul li a p {
@@ -510,7 +510,7 @@ h5 {
 }
 
 .profile .banner .btn-info span {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 .profile .user {
@@ -537,7 +537,7 @@ h5 {
 
 .profile .user .avatar {
   margin-right: 1%;
-  padding: 3% 0% 1.5% 0%;
+  padding: 3% 0% 1% 0%;
   width: 10%;
 }
 
@@ -570,7 +570,7 @@ h5 {
   background: #FFFAFA;
   width: 100%;
   padding: 1% 2%;
-  border-radius: 25px;
+  border-radius: 2vmin;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
