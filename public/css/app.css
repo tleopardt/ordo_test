@@ -57,6 +57,34 @@ h5 {
   padding: 1.7% 1.2% 0.1% 1.2%;
 }
 
+.menu .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #f3ebeb;
+  padding-bottom: 5%;
+}
+
+.menu .welcome img {
+  margin-right: 5%;
+  width: 20%;
+}
+
+.menu .welcome p {
+  font-size: .9vw;
+  font-weight: 500;
+}
+
 .menu .menu-list ul li {
   list-style-type: none;
   -webkit-transition: 0.2s ease-in-out;
@@ -115,34 +143,6 @@ h5 {
   border-top-left-radius: 0px;
 }
 
-.welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-bottom: 1px solid #f3ebeb;
-  padding-bottom: 5%;
-}
-
-.welcome img {
-  margin-right: 5%;
-  width: 20%;
-}
-
-.welcome p {
-  font-size: .9vw;
-  font-weight: 500;
-}
-
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,11 +196,6 @@ h5 {
   border: 0.3vh solid #fff;
 }
 
-.main {
-  padding-left: 4%;
-  width: 80%;
-}
-
 .title {
   padding: 1% 0%;
 }
@@ -209,7 +204,12 @@ h5 {
   font-size: 1.35vw;
 }
 
-.section-1 {
+.main {
+  padding-left: 4%;
+  width: 80%;
+}
+
+.main .section-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +220,7 @@ h5 {
   padding: 1% 0%;
 }
 
-.section-1 .user {
+.main .section-1 .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,18 +242,18 @@ h5 {
           box-shadow: 0vw 0.1vw 0.8vw 0vw rgba(0, 0, 0, 0.075);
 }
 
-.section-1 .user .avatar {
+.main .section-1 .user .avatar {
   width: 35%;
   height: 10%;
   margin-right: 0%;
   padding: 3%;
 }
 
-.section-1 .user .avatar img {
+.main .section-1 .user .avatar img {
   width: 100%;
 }
 
-.section-1 .user .avatar .circle {
+.main .section-1 .user .avatar .circle {
   width: 2.6vh;
   height: 2.5vh;
   margin-left: 5.6%;
@@ -261,35 +261,35 @@ h5 {
   border-width: 0.6vh !important;
 }
 
-.section-1 .user .nm {
+.main .section-1 .user .nm {
   text-align: center;
 }
 
-.section-1 .user .nm h5 {
+.main .section-1 .user .nm h5 {
   font-weight: 600;
 }
 
-.section-1 .user .nm p {
+.main .section-1 .user .nm p {
   color: #79b6fc;
 }
 
-.pengumuman {
+.main .pengumuman {
   margin-left: 1.5%;
   width: 69%;
   overflow: hidden;
 }
 
-.pengumuman .splide__track {
+.main .pengumuman .splide__track {
   padding-left: 1% !important;
 }
 
-.pengumuman .slider {
+.main .pengumuman .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.pengumuman .card {
+.main .pengumuman .card {
   -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
           box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
   padding: 1.8%;
@@ -298,27 +298,27 @@ h5 {
   margin-right: 1.8%;
 }
 
-.pengumuman .card h5 {
+.main .pengumuman .card h5 {
   font-size: .65vw;
 }
 
-.pengumuman .card p {
+.main .pengumuman .card p {
   font-size: .45vw;
 }
 
-.pengumuman .card p:nth-child(4) {
+.main .pengumuman .card p:nth-child(4) {
   color: #b0b5bd !important;
   line-height: 140%;
   margin-top: 2.5px;
 }
 
-.pengumuman .card img {
+.main .pengumuman .card img {
   width: 100%;
   border-radius: 1.5vmin;
   padding: 3% 0%;
 }
 
-.pengumuman .card button {
+.main .pengumuman .card button {
   background-color: #4e7ba8;
   font-size: .40vw;
   color: #fff;
@@ -329,12 +329,12 @@ h5 {
   margin-top: 7%;
 }
 
-.jadwal {
+.main .jadwal {
   width: 100%;
 }
 
-.jadwal .tipe-1,
-.jadwal .tipe-2 {
+.main .jadwal .tipe-1,
+.main .jadwal .tipe-2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -343,28 +343,28 @@ h5 {
   padding-bottom: 1%;
 }
 
-.jadwal .tipe-1 div:nth-child(odd) .label,
-.jadwal .tipe-2 div:nth-child(odd) .label {
+.main .jadwal .tipe-1 div:nth-child(odd) .label,
+.main .jadwal .tipe-2 div:nth-child(odd) .label {
   background-color: #4e7ba8;
 }
 
-.jadwal .tipe-1 div:nth-child(even) .label,
-.jadwal .tipe-2 div:nth-child(even) .label {
+.main .jadwal .tipe-1 div:nth-child(even) .label,
+.main .jadwal .tipe-2 div:nth-child(even) .label {
   background-color: #71c3d6;
 }
 
-.jadwal .tipe-1 div:nth-child(odd) .deskripsi,
-.jadwal .tipe-2 div:nth-child(odd) .deskripsi {
+.main .jadwal .tipe-1 div:nth-child(odd) .deskripsi,
+.main .jadwal .tipe-2 div:nth-child(odd) .deskripsi {
   background-color: #c9e2e8;
 }
 
-.jadwal .tipe-1 div:nth-child(even) .deskripsi,
-.jadwal .tipe-2 div:nth-child(even) .deskripsi {
+.main .jadwal .tipe-1 div:nth-child(even) .deskripsi,
+.main .jadwal .tipe-2 div:nth-child(even) .deskripsi {
   background-color: #deebee;
 }
 
-.jadwal .tipe-1 .label,
-.jadwal .tipe-2 .label {
+.main .jadwal .tipe-1 .label,
+.main .jadwal .tipe-2 .label {
   text-align: center;
   color: #fff;
   width: 100%;
@@ -375,24 +375,24 @@ h5 {
   margin-bottom: 7%;
 }
 
-.jadwal .tipe-1 .deskripsi,
-.jadwal .tipe-2 .deskripsi {
+.main .jadwal .tipe-1 .deskripsi,
+.main .jadwal .tipe-2 .deskripsi {
   padding: 6.5%;
   border-radius: 1vmin;
 }
 
-.jadwal .tipe-1 .deskripsi h3,
-.jadwal .tipe-2 .deskripsi h3 {
+.main .jadwal .tipe-1 .deskripsi h3,
+.main .jadwal .tipe-2 .deskripsi h3 {
   font-size: 0.8vw;
   font-weight: 600;
 }
 
-.jadwal .tipe-1 .deskripsi p,
-.jadwal .tipe-2 .deskripsi p {
+.main .jadwal .tipe-1 .deskripsi p,
+.main .jadwal .tipe-2 .deskripsi p {
   font-size: 0.75vw;
 }
 
-.jadwal .tipe-2 .deskripsi {
+.main .jadwal .tipe-2 .deskripsi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +408,7 @@ h5 {
           flex-direction: row;
 }
 
-.jadwal .tipe-2 .deskripsi label {
+.main .jadwal .tipe-2 .deskripsi label {
   font-size: .51vw;
   background-color: #f25151;
   border-radius: .4vmin;
@@ -417,11 +417,11 @@ h5 {
   font-weight: 500;
 }
 
-.jadwal .tipe-2 div .label-danger {
+.main .jadwal .tipe-2 div .label-danger {
   background-color: #f25151;
 }
 
-.jadwal .tipe-2 div .label-success {
+.main .jadwal .tipe-2 div .label-success {
   background-color: #c2ce35;
 }
 
