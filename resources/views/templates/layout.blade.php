@@ -57,7 +57,6 @@
 <!-- Slider JS -->
 <script src="{{ asset ('splide/dist/js/splide.min.js')}}"></script>
 <script>
-    // $('body').on('load').css("opacity", "1")
     // slide script
     if($('.splide').length !== 0) {
         var sliderFunction = new Splide('.splide' ,{
