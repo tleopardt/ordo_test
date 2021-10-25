@@ -35,7 +35,13 @@
                     <li class="nav-item"><a href="profile"><span class="material-icons">account_circle</span><p>Profil</p></a></li>
                     <li class="nav-item"><a href="#"><span class="material-icons">event_note</span><p>Jadwal</p></a></li>
                     <li class="nav-item"><a href="#"><span class="material-icons">cast_for_education</span><p>Pengumuman</p></a></li>
-                    <li class="nav-item"><a href="#"><span class="material-icons">school</span><p>Kelas</p></a></li>
+                    <li class="nav-item">
+                        <div id="menu-expand">
+                            <span class="material-icons">school</span><p>Kelas</p><span class="material-icons">expand_more</span>
+                            <!-- submenu -->
+                            <!-- <a href="#"></a> -->
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="#"><span class="material-icons">assignment</span><p>Quiz</p></a></li>
                     <li class="nav-item"><a href="#"><span class="material-icons">file_copy</span><p>Ulangan</p></a></li>
 

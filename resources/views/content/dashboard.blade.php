@@ -20,36 +20,6 @@
             <div class="title">
                 <h5>Daftar Pengumuman</h5>
             </div>
-            <!-- <div class="slider">
-                <div class="card">
-                    <img src="{{ asset ('img/news.png') }}" alt="true" />
-                    <h5>Judul Pengumuman</h5>
-                    <p>Senin, 20 Januari 2021</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
-                    <button>READ MORE</button>
-                </div>
-                <div class="card">
-                    <img src="{{ asset ('img/news.png') }}" alt="true" />
-                    <h5>Judul Pengumuman</h5>
-                    <p>Senin, 20 Januari 2021</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
-                    <button>READ MORE</button>
-                </div>
-                <div class="card">
-                    <img src="{{ asset ('img/news.png') }}" alt="true" />
-                    <h5>Judul Pengumuman</h5>
-                    <p>Senin, 20 Januari 2021</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
-                    <button>READ MORE</button>
-                </div>
-                <div class="card">
-                    <img src="{{ asset ('img/news.png') }}" alt="true" />
-                    <h5>Judul Pengumuman</h5>
-                    <p>Senin, 20 Januari 2021</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pretium placerat ut platea. Purus blandit integer sagittis massa vel est hac. </p>
-                    <button>READ MORE</button>
-                </div>
-            </div> -->
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list slider">
@@ -84,15 +54,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">Slide 01</li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="jadwal">

@@ -16,10 +16,10 @@
         <p>Periksa data diri anda!<br />Jika terdapat ketidaksesuaian data segera hubungi admin untuk proses perbaikan</p>
       </div>
     </div>
-    <div class="btn-info">
+    <button class="btn-info">
       <span class="material-icons">whatsapp</span>&nbsp;&nbsp;
       Hubungi Admin
-    </div>
+    </button>
   </div>
   <div class="user">
       <div class="avatar">

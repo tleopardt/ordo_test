@@ -51,7 +51,7 @@ h5 {
 .menu {
   width: 17%;
   border-radius: 1.8vmin;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.062);
   padding: 1.7% 1.2% 0.1% 1.2%;
 
 
@@ -59,7 +59,10 @@ h5 {
       list-style-type: none;
       transition: 0.2s ease-in-out;
 
-    & a {
+    & #menu-expand span:nth-child(3){
+      margin-left: auto;
+    }
+    & a, & #menu-expand {
         display: flex;
         align-items: center;
         padding: 5% 6%;
@@ -86,12 +89,12 @@ h5 {
       background-color: $primary;
       border-radius: .8vmin;
       color: #fff;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.062);
       transition: 0.1s ease-in-out;
     }
   }
 
-  #{&}-list ul div {
+  #{&}-list ul div:nth-last-child(2) {
     border-top: 1px solid #e5e5e5;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -154,7 +157,7 @@ h5 {
   width: 80%;
 }
 .title {
-  padding: 2% 0%;
+  padding: 1% 0%;
   & h3 {
     font-size: 1.35vw;
   }
@@ -163,6 +166,7 @@ h5 {
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 1% 0%;
 
   & .user {
     @include basicFlex(center, column);
@@ -170,7 +174,7 @@ h5 {
     padding: 4% 0%;
     background-color: #fff;
     border-radius: 3vmin;
-    box-shadow: 0 0 10px rgb(226, 225, 225);
+    box-shadow: 0vw 0.1vw 0.8vw 0vw rgba(0, 0, 0, 0.075);
 
     & .avatar {
       width: 35%;
@@ -256,11 +260,9 @@ h5 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1%;
+    padding-bottom: 1%;
 
-    & div,
     & div {
-      // padding-right: 7%;
-
       &:nth-child(odd) .label {
         background-color: $primary;
       }
@@ -274,7 +276,6 @@ h5 {
         background-color: #deebee;
       }
     }
-    & .label,
     & .label {
       text-align: center;
       color: #fff;
@@ -285,7 +286,6 @@ h5 {
       border-radius: 1vmin;
       margin-bottom: 7%;
     }
-    & .deskripsi,
     & .deskripsi {
       padding: 6.5%;
       border-radius: 1vmin;
@@ -355,9 +355,13 @@ h5 {
       & .btn-info {
         @include basicFlex(space-between, row);
         background-color: $info;
+        color: #fff;
+        border: none;
         padding: 1% 1.5%;
         border-radius: 1.5vmin;
         font-size: $mini-text;
+        cursor: pointer;
+
         & span {
           font-size: $icon-size;
         }
@@ -367,8 +371,8 @@ h5 {
   & .user {
     @include basicFlex(center, column);
     background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgb(226, 225, 225);
+    border-radius: 3vmin;
+    box-shadow: 0vw 0.1vw 1vw 0vw rgba(0, 0, 0, 0.075);
     padding: 0% 2%;
     margin: 3% 0%;
 
